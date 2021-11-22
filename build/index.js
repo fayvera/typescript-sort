@@ -1,12 +1,16 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-var sorter_1 = require("./sorter");
-var CharactersCollection_1 = require("./CharactersCollection");
+var SLLCollection_1 = require("./SLLCollection");
 // const numbersCollection = new NumbersCollection([5, 0, -1, 10]);
-// const sorter = new Sorter(numbersCollection)
-// sorter.sort();
+// numbersCollection.sort();
 // console.log(numbersCollection.data)
-var charactersCollection = new CharactersCollection_1.CharactersCollection('UQLZAa');
-var sorter = new sorter_1.Sorter(charactersCollection);
-sorter.sort();
-console.log(charactersCollection);
+// const charactersCollection = new CharactersCollection('UQLZAa');
+// charactersCollection.sort();
+// console.log(charactersCollection.data)
+var linkedList = new SLLCollection_1.LinkedList();
+linkedList.add(500);
+linkedList.add(-10);
+linkedList.add(-3);
+linkedList.add(4);
+linkedList.sort();
+linkedList.print();
